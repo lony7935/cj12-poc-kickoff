@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW" data-theme="engineering-dark">
 <head>
 <meta charset="utf-8">
@@ -43,13 +43,13 @@ img,svg,video{max-width:100%;display:block}
 .slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);z-index:2}
 .slide.is-prev{transform:translateX(-30px)}
 /* ── typography ── */
-.kicker{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin:0 0 14px}
-.eyebrow{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)}
-.h1{font-family:var(--font-display);font-size:80px;line-height:1.05;font-weight:800;letter-spacing:var(--letter-tight);margin:0 0 18px;color:var(--text-1)}
-.h2{font-family:var(--font-display);font-size:56px;line-height:1.1;font-weight:700;letter-spacing:var(--letter-tight);margin:0 0 14px;color:var(--text-1)}
-.h3{font-size:32px;line-height:1.2;font-weight:600;margin:0 0 10px;color:var(--text-1)}
-.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px;color:var(--text-1)}
-.lede{font-size:22px;line-height:1.55;color:var(--text-2);font-weight:300;max-width:62ch}
+.kicker{font-size:28px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin:0 0 14px}
+.eyebrow{font-size:24px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)}
+.h1{font-family:var(--font-display);font-size:160px;line-height:1.05;font-weight:800;letter-spacing:var(--letter-tight);margin:0 0 18px;color:var(--text-1)}
+.h2{font-family:var(--font-display);font-size:112px;line-height:1.1;font-weight:700;letter-spacing:var(--letter-tight);margin:0 0 14px;color:var(--text-1)}
+.h3{font-size:64px;line-height:1.2;font-weight:600;margin:0 0 10px;color:var(--text-1)}
+.h4{font-size:44px;line-height:1.3;font-weight:600;margin:0 0 8px;color:var(--text-1)}
+.lede{font-size:44px;line-height:1.55;color:var(--text-2);font-weight:300;max-width:62ch}
 .dim{color:var(--text-2)}.dim2{color:var(--text-3)}
 .gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 /* ── layout ── */
@@ -73,17 +73,17 @@ img,svg,video{max-width:100%;display:block}
 .card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
 /* ── pills / badges ── */
-.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:600;background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid var(--border)}
+.pill{display:inline-block;padding:8px 20px;border-radius:999px;font-size:24px;font-weight:600;background:rgba(255,255,255,.08);color:var(--text-2);border:1px solid var(--border)}
 .pill-accent{background:rgba(232,168,76,.18);color:var(--accent);border-color:rgba(232,168,76,.35)}
 .pill-warn{background:rgba(232,92,51,.18);color:#ff7a5a;border-color:rgba(232,92,51,.35)}
 .pill-good{background:rgba(60,184,120,.15);color:#5dd39e;border-color:rgba(60,184,120,.3)}
-.badge-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:var(--grad);color:#1a0e00;font-weight:800;font-size:15px;flex-shrink:0}
+.badge-num{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:8px;background:var(--grad);color:#1a0e00;font-weight:800;font-size:28px;flex-shrink:0}
 /* ── dividers ── */
 .divider{height:1px;background:var(--border);width:100%}
 .divider-accent{height:3px;width:64px;background:var(--accent);border-radius:2px}
 /* ── chrome ── */
-.deck-header{position:absolute;top:28px;left:48px;right:48px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;z-index:10;pointer-events:none}
-.deck-footer{position:absolute;bottom:28px;left:48px;right:48px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
+.deck-header{position:absolute;top:28px;left:48px;right:48px;display:flex;align-items:center;justify-content:space-between;font-size:24px;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;z-index:10;pointer-events:none}
+.deck-footer{position:absolute;bottom:28px;left:48px;right:48px;display:flex;align-items:center;justify-content:space-between;font-size:24px;color:var(--text-3);z-index:10;pointer-events:none}
 .slide-number::before{content:attr(data-current)}
 .slide-number::after{content:" / " attr(data-total)}
 .progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
@@ -114,86 +114,86 @@ img,svg,video{max-width:100%;display:block}
   radial-gradient(ellipse at 80% 50%,rgba(232,168,76,.08) 0,transparent 55%),
   radial-gradient(ellipse at 20% 80%,rgba(232,92,51,.06) 0,transparent 45%),
   linear-gradient(160deg,#05101e 0%,#0a1826 50%,#0d1a24 100%)}
-.cover-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(232,168,76,.15);border:1px solid rgba(232,168,76,.35);border-radius:999px;padding:6px 18px;margin-bottom:28px}
-.cover-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse-dot 2s ease-in-out infinite}
+.cover-badge{display:inline-flex;align-items:center;gap:12px;background:rgba(232,168,76,.15);border:1px solid rgba(232,168,76,.35);border-radius:999px;padding:10px 24px;margin-bottom:28px}
+.cover-badge .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);animation:pulse-dot 2s ease-in-out infinite}
 @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
 .cover-grid-line{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.015) 0 1px,transparent 1px 80px),repeating-linear-gradient(90deg,rgba(255,255,255,.015) 0 1px,transparent 1px 80px);pointer-events:none}
 .cover-hex{position:absolute;right:140px;top:50%;transform:translateY(-50%);width:420px;height:420px;opacity:.08;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpolygon points='100,10 190,55 190,145 100,190 10,145 10,55' fill='none' stroke='%23e8a84c' stroke-width='2'/%3E%3Cpolygon points='100,30 170,67 170,133 100,170 30,133 30,67' fill='none' stroke='%23e8a84c' stroke-width='1'/%3E%3Cpolygon points='100,50 150,75 150,125 100,150 50,125 50,75' fill='none' stroke='%23e8a84c' stroke-width='1'/%3E%3C/svg%3E") center/contain no-repeat}
 
 /* Agenda slide */
-.agenda-row{display:flex;align-items:center;gap:20px;padding:14px 20px;border-radius:var(--radius);border:1px solid var(--border);background:rgba(255,255,255,.03);transition:background .2s}
+.agenda-row{display:flex;align-items:center;gap:24px;padding:22px 32px;border-radius:var(--radius);border:1px solid var(--border);background:rgba(255,255,255,.03);transition:background .2s}
 .agenda-row:hover{background:rgba(232,168,76,.06);border-color:rgba(232,168,76,.25)}
-.agenda-num{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--accent);width:28px;flex-shrink:0}
-.agenda-title{flex:1;font-size:20px;font-weight:500;color:var(--text-1)}
-.agenda-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.5}
+.agenda-num{font-family:var(--font-mono);font-size:28px;font-weight:700;color:var(--accent);width:50px;flex-shrink:0}
+.agenda-title{flex:1;font-size:40px;font-weight:500;color:var(--text-1)}
+.agenda-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);opacity:.5}
 
 /* Decision card (P03) */
-.decision-card{display:flex;align-items:flex-start;gap:16px;padding:18px 22px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid var(--border);transition:all .2s}
+.decision-card{display:flex;align-items:flex-start;gap:20px;padding:24px 28px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid var(--border);transition:all .2s}
 .decision-card:hover{background:rgba(60,184,120,.07);border-color:rgba(60,184,120,.25)}
-.decision-check{width:32px;height:32px;border-radius:50%;background:rgba(60,184,120,.2);border:1.5px solid rgba(60,184,120,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#5dd39e;font-size:16px}
+.decision-check{width:48px;height:48px;border-radius:50%;background:rgba(60,184,120,.2);border:1.5px solid rgba(60,184,120,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#5dd39e;font-size:24px}
 
 /* Role table (P06) */
-.role-row{display:grid;grid-template-columns:200px 1fr 160px;gap:0;border-bottom:1px solid var(--border)}
+.role-row{display:grid;grid-template-columns:260px 1fr;gap:0;border-bottom:1px solid var(--border)}
 .role-row:last-child{border-bottom:none}
-.role-cell{padding:14px 16px;font-size:17px;display:flex;align-items:center}
-.role-head{background:rgba(232,168,76,.10);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.role-cell{padding:18px 22px;font-size:30px;display:flex;align-items:center}
+.role-head{background:rgba(232,168,76,.10);font-weight:700;font-size:26px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .role-lead{font-weight:700;color:var(--text-1)}
-.role-sub{color:var(--text-2);font-size:15px}
+.role-sub{color:var(--text-2);font-size:26px}
 
 /* Timeline (P07) */
 .timeline{display:flex;gap:0;position:relative;margin-top:24px}
 .timeline::before{content:"";position:absolute;top:36px;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),rgba(232,168,76,.3));border-radius:2px}
 .tl-item{flex:1;position:relative;padding-top:64px;padding-right:16px}
-.tl-dot{position:absolute;top:28px;left:0;width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid #0d1520;transform:translateX(-8px);z-index:1}
+.tl-dot{position:absolute;top:28px;left:0;width:18px;height:18px;border-radius:50%;background:var(--accent);border:3px solid #0d1520;transform:translateX(-9px);z-index:1}
 .tl-dot.warn{background:var(--bad)}
-.tl-month{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
-.tl-content{font-size:16px;color:var(--text-2);line-height:1.5}
-.tl-warn{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:4px 10px;background:rgba(232,92,51,.15);border:1px solid rgba(232,92,51,.35);border-radius:4px;font-size:13px;font-weight:600;color:#ff7a5a}
+.tl-month{font-family:var(--font-mono);font-size:26px;font-weight:700;color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
+.tl-content{font-size:28px;color:var(--text-2);line-height:1.5}
+.tl-warn{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 14px;background:rgba(232,92,51,.15);border:1px solid rgba(232,92,51,.35);border-radius:4px;font-size:24px;font-weight:600;color:#ff7a5a}
 
 /* Action list (P08/P09) */
-.action-item{display:flex;align-items:flex-start;gap:16px;padding:14px 18px;border-radius:var(--radius);background:rgba(255,255,255,.03);border:1px solid var(--border);margin-bottom:10px}
-.action-badge-red{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--bad);margin-top:8px;box-shadow:0 0 8px rgba(232,92,51,.6)}
-.action-badge-yellow{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--warn);margin-top:8px;box-shadow:0 0 8px rgba(232,168,76,.6)}
-.action-code{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--accent);flex-shrink:0;width:44px;margin-top:2px}
+.action-item{display:flex;align-items:flex-start;gap:18px;padding:16px 20px;border-radius:var(--radius);background:rgba(255,255,255,.03);border:1px solid var(--border);margin-bottom:10px}
+.action-badge-red{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:var(--bad);margin-top:10px;box-shadow:0 0 8px rgba(232,92,51,.6)}
+.action-badge-yellow{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:var(--warn);margin-top:10px;box-shadow:0 0 8px rgba(232,168,76,.6)}
+.action-code{font-family:var(--font-mono);font-size:26px;font-weight:700;color:var(--accent);flex-shrink:0;width:72px;margin-top:2px}
 .action-body{flex:1}
-.action-owner{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:600;color:var(--text-3);background:rgba(255,255,255,.06);border-radius:4px;padding:2px 10px;align-self:flex-start;margin-top:1px}
+.action-owner{margin-left:auto;flex-shrink:0;font-size:24px;font-weight:600;color:var(--text-3);background:rgba(255,255,255,.06);border-radius:4px;padding:4px 14px;align-self:flex-start;margin-top:1px}
 
 /* Risk table (P10) */
-.risk-row{display:grid;grid-template-columns:180px 1fr;gap:0;border-bottom:1px solid var(--border)}
+.risk-row{display:grid;grid-template-columns:220px 1fr;gap:0;border-bottom:1px solid var(--border)}
 .risk-row:last-child{border-bottom:none}
-.risk-cell{padding:14px 16px;font-size:17px}
-.risk-category{font-weight:700;color:var(--accent);font-size:15px}
-.risk-pending{display:inline-block;padding:2px 8px;background:rgba(232,92,51,.2);border:1px solid rgba(232,92,51,.4);border-radius:4px;font-size:12px;font-weight:700;color:#ff7a5a;margin-left:8px}
+.risk-cell{padding:18px 20px;font-size:30px}
+.risk-category{font-weight:700;color:var(--accent);font-size:28px}
+.risk-pending{display:inline-block;padding:4px 12px;background:rgba(232,92,51,.2);border:1px solid rgba(232,92,51,.4);border-radius:4px;font-size:22px;font-weight:700;color:#ff7a5a;margin-left:8px}
 
 /* Conclusion */
-.conclusion-line{display:flex;align-items:center;gap:20px;padding:16px 24px;background:rgba(232,168,76,.06);border:1px solid rgba(232,168,76,.2);border-radius:var(--radius);margin-bottom:12px}
-.conclusion-arrow{font-size:24px;color:var(--accent);flex-shrink:0}
+.conclusion-line{display:flex;align-items:center;gap:20px;padding:20px 28px;background:rgba(232,168,76,.06);border:1px solid rgba(232,168,76,.2);border-radius:var(--radius);margin-bottom:12px}
+.conclusion-arrow{font-size:40px;color:var(--accent);flex-shrink:0}
 
 /* Alert block */
-.alert-block{display:flex;align-items:flex-start;gap:16px;padding:16px 20px;background:rgba(232,92,51,.12);border:1.5px solid rgba(232,92,51,.40);border-radius:var(--radius);margin-bottom:16px}
-.alert-icon{font-size:22px;flex-shrink:0;margin-top:1px}
+.alert-block{display:flex;align-items:flex-start;gap:20px;padding:20px 26px;background:rgba(232,92,51,.12);border:1.5px solid rgba(232,92,51,.40);border-radius:var(--radius);margin-bottom:16px}
+.alert-icon{font-size:36px;flex-shrink:0;margin-top:1px}
 
 /* Three-goals (P05) */
-.goal-card{padding:28px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);position:relative;overflow:hidden}
+.goal-card{padding:32px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);position:relative;overflow:hidden}
 .goal-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px}
 .goal-card.gc-1::after{background:linear-gradient(90deg,#3b82f6,#60a5fa)}
 .goal-card.gc-2::after{background:linear-gradient(90deg,var(--warn),var(--accent-2))}
 .goal-card.gc-3::after{background:linear-gradient(90deg,var(--good),#5dd39e)}
-.goal-label{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px}
-.goal-who{font-size:20px;font-weight:700;color:var(--text-1);margin-bottom:12px}
-.goal-item{display:flex;align-items:flex-start;gap:10px;font-size:17px;color:var(--text-2);margin-bottom:8px;line-height:1.45}
+.goal-label{font-size:24px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px}
+.goal-who{font-size:38px;font-weight:700;color:var(--text-1);margin-bottom:12px}
+.goal-item{display:flex;align-items:flex-start;gap:10px;font-size:30px;color:var(--text-2);margin-bottom:8px;line-height:1.45}
 .goal-item::before{content:"›";color:var(--accent);font-weight:700;flex-shrink:0}
 
 /* Section divider slide */
 .slide-section{background:linear-gradient(135deg,#07101c 0%,#0d1824 100%)}
-.section-num{font-family:var(--font-mono);font-size:120px;font-weight:800;color:rgba(232,168,76,.06);position:absolute;right:100px;bottom:40px;line-height:1;letter-spacing:-.04em}
+.section-num{font-family:var(--font-mono);font-size:240px;font-weight:800;color:rgba(232,168,76,.06);position:absolute;right:100px;bottom:40px;line-height:1;letter-spacing:-.04em}
 
 /* Appendix */
-.partner-card{padding:24px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid var(--border);position:relative}
-.partner-icon{font-size:32px;margin-bottom:12px}
-.partner-title{font-size:19px;font-weight:700;color:var(--text-1);margin-bottom:8px}
-.partner-desc{font-size:16px;color:var(--text-2);line-height:1.5}
-.partner-tag{margin-top:12px;display:inline-block;padding:3px 10px;background:rgba(232,168,76,.12);border:1px solid rgba(232,168,76,.3);border-radius:4px;font-size:12px;font-weight:700;color:var(--accent)}
+.partner-card{padding:28px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid var(--border);position:relative}
+.partner-icon{font-size:56px;margin-bottom:12px}
+.partner-title{font-size:36px;font-weight:700;color:var(--text-1);margin-bottom:8px}
+.partner-desc{font-size:30px;color:var(--text-2);line-height:1.5}
+.partner-tag{margin-top:12px;display:inline-block;padding:6px 16px;background:rgba(232,168,76,.12);border:1px solid rgba(232,168,76,.3);border-radius:4px;font-size:22px;font-weight:700;color:var(--accent)}
 </style>
 </head>
 <body>
@@ -212,27 +212,27 @@ img,svg,video{max-width:100%;display:block}
   <div style="position:relative;z-index:1;max-width:900px">
     <div class="cover-badge">
       <span class="dot"></span>
-      <span style="font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.1em">INTERNAL KICKOFF</span>
+      <span style="font-size:26px;font-weight:700;color:var(--accent);letter-spacing:.1em">INTERNAL KICKOFF</span>
     </div>
-    <h1 class="h1" data-anim="fade-up" style="font-size:72px;line-height:1.08;margin-bottom:20px">
+    <h1 class="h1" data-anim="fade-up" style="font-size:144px;line-height:1.08;margin-bottom:20px">
       CJ12 智慧工地 PoC<br>
       <span class="gradient-text">Kickoff 會議</span>
     </h1>
     <div style="width:64px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:24px"></div>
-    <p class="lede" style="font-size:24px;color:var(--text-2)">
+    <p class="lede" style="font-size:44px;color:var(--text-2)">
       權責分工與執行優先順序｜2026-07 啟動
     </p>
     <div class="row mt-xl" style="gap:16px;flex-wrap:wrap">
-      <span class="pill-accent" style="font-size:14px;padding:6px 16px">五大模組 PoC</span>
-      <span class="pill-accent" style="font-size:14px;padding:6px 16px">NT$ 1,500 萬</span>
-      <span class="pill-accent" style="font-size:14px;padding:6px 16px">12 個月執行期</span>
-      <span class="pill-accent" style="font-size:14px;padding:6px 16px">鐵道局 × 中興工程</span>
+      <span class="pill-accent" style="font-size:26px;padding:8px 20px">五大模組 PoC</span>
+      <span class="pill-accent" style="font-size:26px;padding:8px 20px">NT$ 1,500 萬</span>
+      <span class="pill-accent" style="font-size:26px;padding:8px 20px">12 個月執行期</span>
+      <span class="pill-accent" style="font-size:26px;padding:8px 20px">鐵道局 × 中興工程</span>
     </div>
   </div>
 
   <div class="deck-footer">
     <span>對象：曾鳳捷、李志剛、暑期實習生等執行團隊</span>
-    <span class="slide-number" data-current="1" data-total="12"></span>
+    <span class="slide-number" data-current="1" data-total="11"></span>
   </div>
   <div class="notes">封面頁。開場說明：今天是CJ12 PoC 正式 Kickoff，在局長6/30已拍板的基礎上，目的是讓執行團隊帶著明確的任務分工與優先順序出會議室。</div>
 </section>
@@ -246,73 +246,89 @@ img,svg,video{max-width:100%;display:block}
 
   <div style="max-width:800px">
     <p class="kicker">AGENDA</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:8px">今天的議程</h2>
+    <h2 class="h2" style="font-size:80px;margin-bottom:8px">議程</h2>
     <div class="divider-accent mb-m"></div>
 
     <div class="stack mt-l">
-      <div class="agenda-row"><span class="agenda-num">01</span><span class="agenda-title">背景回顧：6/30 成案關鍵裁示</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">02</span><span class="agenda-title">核心心法：以終為始</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">03</span><span class="agenda-title">目標釐清：三個關係人</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">04</span><span class="agenda-title">權責分工總覽</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">05</span><span class="agenda-title">時程總覽</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">06</span><span class="agenda-title">執行優先順序（立即啟動 + 近期）</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">07</span><span class="agenda-title">風險與待決事項</span><span class="agenda-dot"></span></div>
-      <div class="agenda-row"><span class="agenda-num">08</span><span class="agenda-title">結論 / 下一步</span><span class="agenda-dot"></span></div>
+      <div class="agenda-row"><span class="agenda-num">01</span><span class="agenda-title">局長成案關鍵裁示</span><span class="agenda-dot"></span></div>
+      <div class="agenda-row"><span class="agenda-num">02</span><span class="agenda-title">立即工作：下週應完成事項</span><span class="agenda-dot"></span></div>
+      <div class="agenda-row"><span class="agenda-num">03</span><span class="agenda-title">整體計畫了解</span><span class="agenda-dot"></span></div>
+      <div class="agenda-row"><span class="agenda-num">04</span><span class="agenda-title">後續待辦事項與方向討論</span><span class="agenda-dot"></span></div>
+      <div class="agenda-row"><span class="agenda-num">05</span><span class="agenda-title">結論</span><span class="agenda-dot"></span></div>
     </div>
   </div>
 
   <div class="deck-footer">
     <span>預計時長：30 分鐘</span>
-    <span class="slide-number" data-current="2" data-total="12"></span>
+    <span class="slide-number" data-current="2" data-total="11"></span>
   </div>
   <div class="notes">議程頁。說明今天30分鐘的重點：不是逐條討論待辦清單，而是對齊分工、確認優先順序、讓大家帶任務出去。</div>
+</section>
+
+<!-- 分隔頁 01 -->
+<section class="slide slide-section" data-title="01 · 局長成案關鍵裁示">
+  <div class="cover-grid-line"></div>
+  <div class="deck-header">
+    <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
+    <span class="eyebrow">AGENDA 01 / 05</span>
+  </div>
+  <div style="position:relative;z-index:1">
+    <p class="kicker">SECTION 01</p>
+    <h2 class="h2 gradient-text" style="font-size:100px;line-height:1.05;margin-bottom:0">局長成案關鍵裁示</h2>
+    <div style="width:80px;height:4px;background:var(--accent);border-radius:2px;margin-top:20px"></div>
+  </div>
+  <div class="section-num">01</div>
+  <div class="deck-footer">
+    <span>6/30 成案裁示重點</span>
+    <span class="slide-number" data-current="3" data-total="16"></span>
+  </div>
 </section>
 
 <!-- P03 背景回顧 -->
 <section class="slide" data-title="背景回顧" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">01 · 背景回顧</span>
+    <span class="eyebrow">01 · 局長成案關鍵裁示</span>
     <span class="eyebrow">6/30 成案裁示</span>
   </div>
 
   <div style="max-width:1600px;width:100%">
     <p class="kicker">DECISION LOG · 2026-06-30</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">局長已拍板，五大模組正式成案</h2>
-    <p class="dim" style="font-size:18px;margin-bottom:28px">今天的重點不是「要不要做」，而是「誰來做、先做什麼」</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">局長已拍板，智慧工地PoC正式成案</h2>
+    <p class="dim" style="font-size:32px;margin-bottom:28px">今天的重點是下週緊急事項交辦以及後續工作分工表</p>
     <div class="grid g2" style="gap:16px">
       <div class="decision-card">
         <div class="decision-check">✓</div>
         <div>
-          <div style="font-size:18px;font-weight:700;color:var(--text-1);margin-bottom:4px">PoC 成案同意</div>
-          <div style="font-size:16px;color:var(--text-2)">五大模組概念驗證計畫正式核准，進入執行階段</div>
+          <div style="font-size:32px;font-weight:700;color:var(--text-1);margin-bottom:6px">PoC 成案同意</div>
+          <div style="font-size:28px;color:var(--text-2)">智慧工地PoC計畫正式核准，進入執行階段</div>
         </div>
       </div>
       <div class="decision-card">
         <div class="decision-check">✓</div>
         <div>
-          <div style="font-size:18px;font-weight:700;color:var(--text-1);margin-bottom:4px">NT$ 1,500 萬納入監造契約</div>
-          <div style="font-size:16px;color:var(--text-2)">局長同意費用納入技術服務契約，CCO 辦理路徑確認</div>
+          <div style="font-size:32px;font-weight:700;color:var(--text-1);margin-bottom:6px">NT$ 1,500 萬納入監造契約</div>
+          <div style="font-size:28px;color:var(--text-2)">局長同意費用納入技術服務契約，辦理CCO追加監造費用</div>
         </div>
       </div>
       <div class="decision-card">
         <div class="decision-check">✓</div>
         <div>
-          <div style="font-size:18px;font-weight:700;color:var(--text-1);margin-bottom:4px">與資拓宏宇合作，即刻啟動對話</div>
-          <div style="font-size:16px;color:var(--text-2)">局長指示兩方應即刻啟動合作討論，不得拖延</div>
+          <div style="font-size:32px;font-weight:700;color:var(--text-1);margin-bottom:6px">與資拓宏宇合作，即刻啟動對話</div>
+          <div style="font-size:28px;color:var(--text-2)">局長指示兩方應啟動合作討論</div>
         </div>
       </div>
       <div class="decision-card">
         <div class="decision-check">✓</div>
         <div>
-          <div style="font-size:18px;font-weight:700;color:var(--text-1);margin-bottom:4px">系統整合原則確立</div>
-          <div style="font-size:16px;color:var(--text-2)">中興端做 AI 處理，資料最終回鐵道局平台；不要多套系統</div>
+          <div style="font-size:32px;font-weight:700;color:var(--text-1);margin-bottom:6px">系統資料串接原則確立</div>
+          <div style="font-size:28px;color:var(--text-2)">中興端做 AI 處理，資料最終回鐵道局平台；各單位只要操作各自的系統</div>
         </div>
       </div>
       <div class="decision-card" style="grid-column:1/-1">
         <div class="decision-check">✓</div>
         <div>
-          <div style="font-size:18px;font-weight:700;color:var(--text-1);margin-bottom:4px">CJ12 風評報告按 SMS 計畫新要點進版</div>
-          <div style="font-size:16px;color:var(--text-2)">風評報告配合 PoC 進度同步更新，雙軌並行</div>
+          <div style="font-size:32px;font-weight:700;color:var(--text-1);margin-bottom:6px">CJ12 設計風評報告按 SMS 計畫新要點進版</div>
+          <div style="font-size:28px;color:var(--text-2)">設計風評報告配合中興社所提供的新要點進版</div>
         </div>
       </div>
     </div>
@@ -320,72 +336,134 @@ img,svg,video{max-width:100%;display:block}
 
   <div class="deck-footer">
     <span></span>
-    <span class="slide-number" data-current="3" data-total="12"></span>
+    <span class="slide-number" data-current="3" data-total="11"></span>
   </div>
   <div class="notes">強調：局長已做決定，五點裁示都是明確的行動指令。我們今天的任務是把這些裁示轉化成每個人的具體行動。</div>
 </section>
 
-<!-- P04 核心心法 -->
-<section class="slide" data-title="核心心法" style="background:linear-gradient(160deg,#07101c 0%,#0d1824 100%)">
+<!-- 分隔頁 02 -->
+<section class="slide slide-section" data-title="02 · 立即工作：下週應完成事項">
+  <div class="cover-grid-line"></div>
   <div class="deck-header">
-    <span class="eyebrow">02 · 核心心法</span>
-    <span class="eyebrow">方向定錨</span>
+    <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
+    <span class="eyebrow">AGENDA 02 / 05</span>
+  </div>
+  <div style="position:relative;z-index:1">
+    <p class="kicker">SECTION 02</p>
+    <h2 class="h2 gradient-text" style="font-size:100px;line-height:1.05;margin-bottom:0">立即工作</h2>
+    <p style="font-size:48px;color:var(--text-2);margin-top:16px;margin-bottom:0;font-weight:300">下週應完成事項</p>
+    <div style="width:80px;height:4px;background:var(--accent);border-radius:2px;margin-top:20px"></div>
+  </div>
+  <div class="section-num">02</div>
+  <div class="deck-footer">
+    <span>🔴 即日起至 7/10</span>
+    <span class="slide-number" data-current="5" data-total="16"></span>
+  </div>
+</section>
+
+<!-- P04 執行優先順序（一）🔴 -->
+<section class="slide" data-title="立即啟動" style="background:var(--bg)">
+  <div class="deck-header">
+    <span class="eyebrow">02 · 立即工作：下週應完成事項</span>
+    <span class="eyebrow" style="color:var(--bad)">🔴 即日起至 7/10</span>
   </div>
 
-  <div class="grid g2" style="gap:48px;align-items:center;width:100%">
-    <div>
-      <p class="kicker">NORTH STAR</p>
-      <div style="font-size:88px;font-weight:800;line-height:1.0;letter-spacing:-.03em;margin-bottom:20px" class="gradient-text">以終<br>為始</div>
-      <div class="divider-accent mb-m"></div>
-      <p class="lede" style="font-size:20px">只有 <strong style="color:var(--accent)">12 個月</strong>，方向要先定錨，才能有效率執行。</p>
+  <div style="width:100%">
+    <p class="kicker" style="color:var(--bad)">IMMEDIATE ACTION · DUE 2026-07-10</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:8px">🔴 立即啟動——7/3~7/10 最重要先完成的工作</h2>
+
+    <div class="alert-block">
+      <span class="alert-icon">🚨</span>
+      <div>
+        <div style="font-size:30px;font-weight:700;color:#ff7a5a;margin-bottom:6px">CCO 辦理前置要件（優先於一切）</div>
+        <div style="font-size:28px;color:var(--text-2)">CCO 辦理前，須先取得<strong style="color:var(--text-1)">鐵道局書面依據</strong>——會議紀錄或工管組／北分局正式發文，授權中興公司辦理 PoC。此為契約啟動的前置要件。</div>
+        <div style="margin-top:8px"><span class="action-owner" style="background:rgba(232,92,51,.15);color:#ff7a5a;border:1px solid rgba(232,92,51,.3)">負責：鳳捷</span></div>
+      </div>
     </div>
-    <div class="stack" style="gap:20px">
-      <div class="card card-accent">
-        <div class="kicker" style="margin-bottom:8px;font-size:12px">最後要交給鐵道局的是什麼？</div>
-        <div class="grid g2" style="gap:12px;margin-top:8px">
-          <div style="padding:14px 16px;background:rgba(232,168,76,.08);border-radius:var(--radius);border:1px solid rgba(232,168,76,.2)">
-            <div style="font-size:28px;margin-bottom:6px">📋</div>
-            <div style="font-size:16px;font-weight:700;color:var(--text-1)">規格文件</div>
-          </div>
-          <div style="padding:14px 16px;background:rgba(232,168,76,.08);border-radius:var(--radius);border:1px solid rgba(232,168,76,.2)">
-            <div style="font-size:28px;margin-bottom:6px">📐</div>
-            <div style="font-size:16px;font-weight:700;color:var(--text-1)">規範文件</div>
-          </div>
-          <div style="padding:14px 16px;background:rgba(232,168,76,.08);border-radius:var(--radius);border:1px solid rgba(232,168,76,.2)">
-            <div style="font-size:28px;margin-bottom:6px">🏗️</div>
-            <div style="font-size:16px;font-weight:700;color:var(--text-1)">架構文件</div>
-          </div>
-          <div style="padding:14px 16px;background:rgba(232,168,76,.08);border-radius:var(--radius);border:1px solid rgba(232,168,76,.2)">
-            <div style="font-size:28px;margin-bottom:6px">✅</div>
-            <div style="font-size:16px;font-weight:700;color:var(--text-1)">驗證報告</div>
-          </div>
+
+    <div style="margin-top:16px">
+      <div class="action-item">
+        <div class="action-badge-red"></div>
+        <div class="badge-num" style="flex-shrink:0">1</div>
+        <div class="action-body">
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">列出辦理變更契約所需文件清單</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:4px">參考桃地第一次CCO文件研究，先做明細表等可先做文件</div>
         </div>
+        <div class="action-owner">張晟</div>
+        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
       </div>
-      <div class="card" style="background:rgba(232,92,51,.06);border-color:rgba(232,92,51,.2)">
-        <div style="font-size:15px;font-weight:700;color:#ff7a5a;margin-bottom:6px">⚠️ 角色定位：我們是顧問</div>
-        <p style="font-size:17px;color:var(--text-2);margin:0">中興提供「可行的講法、做法」——<br>不是系統整合商，不是資訊設備商</p>
+      <div class="action-item">
+        <div class="action-badge-red"></div>
+        <div class="badge-num" style="flex-shrink:0">2</div>
+        <div class="action-body">
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">整理「預估成本」Excel 表</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:4px">從附件一、附件二加上部門人月估算，整理成費用彙整表，鳳捷跟羿璇交接</div>
+        </div>
+        <div class="action-owner">羿璇</div>
+        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
+      </div>
+      <div class="action-item">
+        <div class="action-badge-red"></div>
+        <div class="badge-num" style="flex-shrink:0">3</div>
+        <div class="action-body">
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">蒐集中興議比價程序，確認後續璽樂、台大跟中興請款的費用撥付方式跟時間</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:4px">釐清內部流程以規劃合理執行時程</div>
+        </div>
+        <div class="action-owner">鳳捷</div>
+        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
+      </div>
+      <div class="action-item">
+        <div class="action-badge-red"></div>
+        <div class="badge-num" style="flex-shrink:0">4</div>
+        <div class="action-body">
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">聯繫台大討論效益驗證研究方法及交付內容，請台大後續要提出執行計畫書</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:4px">第三方效益驗證是局長指定項目，越早確認方法論越好</div>
+        </div>
+        <div class="action-owner">鳳捷</div>
+        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/10</div>
       </div>
     </div>
+
+    <p style="font-size:26px;color:var(--text-3);margin-top:12px">📌 會議結束前逐項確認負責人了解工作範圍跟繳交的成果—不留「疑問」出會議室</p>
   </div>
 
   <div class="deck-footer">
     <span></span>
-    <span class="slide-number" data-current="4" data-total="12"></span>
+    <span class="slide-number" data-current="4" data-total="11"></span>
   </div>
-  <div class="notes">這頁是整場Kickoff的思想底座。先讓大家對齊「我們在做什麼、最後要交出什麼」，避免執行過程把力氣錯放在純粹裝設備、搶資源，而忽略了文件和規範的產出。</div>
+  <div class="notes">這頁的目的是今天會議上確認每個人的負責項目和期限。強調最上方的「書面依據前置要件」——沒有鐵道局書面授權，CCO就無法辦理。</div>
+</section>
+
+<!-- 分隔頁 03 -->
+<section class="slide slide-section" data-title="03 · 整體計畫了解">
+  <div class="cover-grid-line"></div>
+  <div class="deck-header">
+    <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
+    <span class="eyebrow">AGENDA 03 / 05</span>
+  </div>
+  <div style="position:relative;z-index:1">
+    <p class="kicker">SECTION 03</p>
+    <h2 class="h2 gradient-text" style="font-size:100px;line-height:1.05;margin-bottom:0">整體計畫了解</h2>
+    <div style="width:80px;height:4px;background:var(--accent);border-radius:2px;margin-top:20px"></div>
+  </div>
+  <div class="section-num">03</div>
+  <div class="deck-footer">
+    <span>目標 · 分工 · 時程</span>
+    <span class="slide-number" data-current="7" data-total="16"></span>
+  </div>
 </section>
 
 <!-- P05 目標釐清 -->
 <section class="slide" data-title="目標釐清" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">03 · 目標釐清</span>
+    <span class="eyebrow">03 · 整體計畫了解</span>
     <span class="eyebrow">三個關係人視角</span>
   </div>
 
   <div style="width:100%">
     <p class="kicker">STAKEHOLDER GOALS</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">三個關係人對「成功」的定義不一樣</h2>
-    <p class="dim" style="font-size:18px;margin-bottom:28px">現場 Show Time 和文件產出是兩條並行的線，缺一不可</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">三個關係人對「成功」的定義不一樣</h2>
+    <p class="dim" style="font-size:32px;margin-bottom:28px">現場 Show Time 和文件產出是兩條並行的線，缺一不可</p>
 
     <div class="grid g3" style="gap:20px">
       <div class="goal-card gc-1">
@@ -421,7 +499,7 @@ img,svg,video{max-width:100%;display:block}
 
     <div class="alert-block mt-l" style="background:rgba(232,168,76,.08);border-color:rgba(232,168,76,.3)">
       <span class="alert-icon">💡</span>
-      <div style="font-size:17px;color:var(--text-2)">
+      <div style="font-size:30px;color:var(--text-2)">
         <strong style="color:var(--accent)">關鍵理解：</strong>局長和工管組要的「Show Time」與我們要交的「規範文件」是同步進行的兩條軸線。現場執行做出成果，同步轉化成可複製的規範——這才是顧問的價值。
       </div>
     </div>
@@ -429,7 +507,7 @@ img,svg,video{max-width:100%;display:block}
 
   <div class="deck-footer">
     <span></span>
-    <span class="slide-number" data-current="5" data-total="12"></span>
+    <span class="slide-number" data-current="5" data-total="11"></span>
   </div>
   <div class="notes">幫助團隊理解為什麼要做兩件事：現場裝儀器做展示是為了局長和工管組，但同時要把這個過程產出規範文件，才是中興顧問的核心價值。兩件事不衝突，但都不能少。</div>
 </section>
@@ -437,20 +515,20 @@ img,svg,video{max-width:100%;display:block}
 <!-- P06 權責分工 -->
 <section class="slide" data-title="權責分工" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">04 · 權責分工</span>
+    <span class="eyebrow">03 · 整體計畫了解</span>
     <span class="eyebrow">誰對口誰</span>
   </div>
 
   <div style="width:100%">
     <p class="kicker">RESPONSIBILITY MATRIX</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">兩條分工線：跑局裡 × 跑現場</h2>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">兩條分工線：跑局裡 × 跑現場</h2>
 
     <div class="grid g2" style="gap:24px;margin-top:24px;align-items:start">
       <!-- 跑局裡 -->
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
           <div style="width:4px;height:24px;background:#3b82f6;border-radius:2px"></div>
-          <span style="font-size:17px;font-weight:700;color:#60a5fa;letter-spacing:.06em">跑局裡——規格規範文件</span>
+          <span style="font-size:30px;font-weight:700;color:#60a5fa;letter-spacing:.06em">跑局裡——規格規範文件</span>
         </div>
         <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
           <div class="role-row">
@@ -460,15 +538,15 @@ img,svg,video{max-width:100%;display:block}
           <div class="role-row" style="background:rgba(59,130,246,.06)">
             <div class="role-cell"><span class="role-lead">瑞澤（主）<br><span class="role-sub">呂經理</span></span></div>
             <div class="role-cell" style="flex-direction:column;align-items:flex-start;gap:4px">
-              <span style="font-size:16px;color:var(--text-1)">規格／規範／招標文件</span>
-              <span style="font-size:14px;color:var(--text-3)">→ 徐曉峯總工（需取得認同）</span>
+              <span style="font-size:28px;color:var(--text-1)">規格／規範／招標文件</span>
+              <span style="font-size:26px;color:var(--text-3)">→ 徐曉峯總工（需取得認同）</span>
             </div>
           </div>
           <div class="role-row">
             <div class="role-cell"><span class="role-lead">張晟（主）<br><span class="role-sub">羿璇、瑞澤</span></span></div>
             <div class="role-cell" style="flex-direction:column;align-items:flex-start;gap:4px">
-              <span style="font-size:16px;color:var(--text-1)">總公司內業、計畫書撰寫</span>
-              <span style="font-size:14px;color:var(--text-3)">→ 工管組嚴組長、楊家嘉</span>
+              <span style="font-size:28px;color:var(--text-1)">總公司內業、計畫書撰寫</span>
+              <span style="font-size:26px;color:var(--text-3)">→ 工管組嚴組長、楊家嘉</span>
             </div>
           </div>
         </div>
@@ -478,7 +556,7 @@ img,svg,video{max-width:100%;display:block}
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
           <div style="width:4px;height:24px;background:var(--accent);border-radius:2px"></div>
-          <span style="font-size:17px;font-weight:700;color:var(--accent);letter-spacing:.06em">跑現場——設備安裝驗收</span>
+          <span style="font-size:30px;font-weight:700;color:var(--accent);letter-spacing:.06em">跑現場——設備安裝驗收</span>
         </div>
         <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
           <div class="role-row">
@@ -488,22 +566,22 @@ img,svg,video{max-width:100%;display:block}
           <div class="role-row" style="background:rgba(232,168,76,.06)">
             <div class="role-cell"><span class="role-lead">鳳捷（主）<br><span class="role-sub">羿璇、張晟、瑞澤</span></span></div>
             <div class="role-cell" style="flex-direction:column;align-items:flex-start;gap:4px">
-              <span style="font-size:16px;color:var(--text-1)">設備商、台大、現場驗收</span>
-              <span style="font-size:14px;color:var(--text-3)">→ 工管組嚴組長、楊家嘉</span>
+              <span style="font-size:28px;color:var(--text-1)">設備商、台大、現場驗收</span>
+              <span style="font-size:26px;color:var(--text-3)">→ 工管組嚴組長、楊家嘉</span>
             </div>
           </div>
           <div class="role-row">
             <div class="role-cell"><span class="role-lead">志剛（主）<br><span class="role-sub">李慶祥副理</span></span></div>
             <div class="role-cell" style="flex-direction:column;align-items:flex-start;gap:4px">
-              <span style="font-size:16px;color:var(--text-1)">桃地監造現場協助創新組</span>
-              <span style="font-size:14px;color:var(--text-3)">→ 曾鳳捷</span>
+              <span style="font-size:28px;color:var(--text-1)">桃地監造現場協助創新組</span>
+              <span style="font-size:26px;color:var(--text-3)">→ 曾鳳捷</span>
             </div>
           </div>
           <div class="role-row">
-            <div class="role-cell"><span class="role-lead" style="font-size:15px">暑期實習生</span></div>
+            <div class="role-cell"><span class="role-lead" style="font-size:30px">暑期實習生</span></div>
             <div class="role-cell" style="flex-direction:column;align-items:flex-start;gap:4px">
-              <span style="font-size:16px;color:var(--text-1)">智慧工地實習（設計→施工→營運）</span>
-              <span style="font-size:14px;color:var(--text-3)">→ 曾鳳捷</span>
+              <span style="font-size:28px;color:var(--text-1)">智慧工地實習（設計→施工→營運）</span>
+              <span style="font-size:26px;color:var(--text-3)">→ 曾鳳捷</span>
             </div>
           </div>
         </div>
@@ -511,8 +589,8 @@ img,svg,video{max-width:100%;display:block}
     </div>
 
     <div class="alert-block mt-l" style="padding:12px 18px">
-      <span class="alert-icon" style="font-size:18px">🔔</span>
-      <div style="font-size:16px;color:var(--text-2)">
+      <span class="alert-icon" style="font-size:36px">🔔</span>
+      <div style="font-size:28px;color:var(--text-2)">
         <strong style="color:#ff7a5a">交接提醒：</strong>黃瑞澤下週不在，本次 Kickoff 是工地執行項目交接給鳳捷、志剛的關鍵時機。&nbsp;&nbsp;
         <strong style="color:var(--text-1)">原則：各主辦主動規劃、討論與彙報——主管不逐項盤點再交辦。</strong>
       </div>
@@ -521,26 +599,29 @@ img,svg,video{max-width:100%;display:block}
 
   <div class="deck-footer">
     <span></span>
-    <span class="slide-number" data-current="6" data-total="12"></span>
+    <span class="slide-number" data-current="6" data-total="11"></span>
   </div>
   <div class="notes">強調「主辦制」：每個主辦人要主動規劃自己的任務，不是等主管逐條交辦。特別說明瑞澤下週不在，現場執行的事情今天交接給鳳捷和志剛。</div>
 </section>
 
+
+
+
+  
 <!-- P07 時程總覽 -->
 <section class="slide" data-title="時程總覽" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">05 · 時程總覽</span>
+    <span class="eyebrow">03 · 整體計畫了解</span>
     <span class="eyebrow">7月 → 11月</span>
-  </div>
-
-  <div style="width:100%">
+  </div>  <div style="width:100%">
     <p class="kicker">SCHEDULE OVERVIEW</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">現在是 7 月，時間比想像中緊迫</h2>
-    <p class="dim" style="font-size:18px;margin-bottom:8px">儀器安裝需 3 個月 → 10 月完成 → 11 月年度發表</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">PoC的近期時間軸，以鐵道局年度發表為主要里程碑</h2>
+    <p class="dim" style="font-size:32px;margin-bottom:8px">儀器安裝需 3 個月 → 10 月完成 → 11 月要給鐵道局可以有成果做年度發表</p>
+     <p class="dim" style="font-size:32px;margin-bottom:8px">現在是 7 月，時間比想像中緊迫</p>
 
     <div class="alert-block" style="margin-bottom:24px;padding:12px 18px">
-      <span class="alert-icon" style="font-size:18px">⚠️</span>
-      <div style="font-size:16px;color:var(--text-2)"><strong style="color:#ff7a5a">關鍵警示：</strong>安裝時程若延遲，將直接卡到11月年度發表。現場協調（借電、門禁、空間）必須本月啟動。</div>
+      <span class="alert-icon" style="font-size:36px">⚠️</span>
+      <div style="font-size:28px;color:var(--text-2)"><strong style="color:#ff7a5a">關鍵警示：</strong>安裝時程若延遲，將直接卡到11月年度發表。現場協調（借電、門禁、空間）必須本月啟動。</div>
     </div>
 
     <div class="timeline">
@@ -591,106 +672,51 @@ img,svg,video{max-width:100%;display:block}
       </div>
     </div>
   </div>
-
   <div class="deck-footer">
     <span>關鍵路徑：儀器安裝必須7月底前啟動</span>
-    <span class="slide-number" data-current="7" data-total="12"></span>
+    <span class="slide-number" data-current="7" data-total="11"></span>
   </div>
   <div class="notes">用時間軸讓大家直觀感受時間壓力。強調安裝需要3個月這個剛性限制，以及11月發表的年度節奏。11月日期要在會議上確認，這是本週待辦之一。</div>
 </section>
 
-<!-- P08 執行優先順序（一）🔴 -->
-<section class="slide" data-title="立即啟動" style="background:var(--bg)">
+<!-- 分隔頁 04 -->
+<section class="slide slide-section" data-title="04 · 後續待辦事項與方向討論">
+  <div class="cover-grid-line"></div>
   <div class="deck-header">
-    <span class="eyebrow">06 · 執行優先順序（一）</span>
-    <span class="eyebrow" style="color:var(--bad)">🔴 即日起至 7/10</span>
+    <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
+    <span class="eyebrow">AGENDA 04 / 05</span>
   </div>
-
-  <div style="width:100%">
-    <p class="kicker" style="color:var(--bad)">IMMEDIATE ACTION · DUE 2026-07-10</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:8px">🔴 立即啟動——成案後最先要動的項目</h2>
-
-    <div class="alert-block">
-      <span class="alert-icon">🚨</span>
-      <div>
-        <div style="font-size:17px;font-weight:700;color:#ff7a5a;margin-bottom:4px">CCO 辦理前置要件（優先於一切）</div>
-        <div style="font-size:16px;color:var(--text-2)">CCO 辦理前，須先取得<strong style="color:var(--text-1)">鐵道局書面依據</strong>——會議紀錄或工管組／北分局正式發文，授權中興公司辦理 PoC。此為契約啟動的前置要件。</div>
-        <div style="margin-top:8px"><span class="action-owner" style="background:rgba(232,92,51,.15);color:#ff7a5a;border:1px solid rgba(232,92,51,.3)">負責：鳳捷</span></div>
-      </div>
-    </div>
-
-    <div style="margin-top:16px">
-      <div class="action-item">
-        <div class="action-badge-red"></div>
-        <div class="badge-num" style="flex-shrink:0">1</div>
-        <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">列出辦理變更契約所需文件清單</div>
-          <div style="font-size:15px;color:var(--text-3);margin-top:3px">參考桃地第一次CCO文件研究，先做明細表等可先做文件</div>
-        </div>
-        <div class="action-owner">張晟</div>
-        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
-      </div>
-      <div class="action-item">
-        <div class="action-badge-red"></div>
-        <div class="badge-num" style="flex-shrink:0">2</div>
-        <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">整理「預估成本」Excel 表</div>
-          <div style="font-size:15px;color:var(--text-3);margin-top:3px">從附件一、附件二加上部門人月估算，整理成費用彙整表</div>
-        </div>
-        <div class="action-owner">羿璇</div>
-        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
-      </div>
-      <div class="action-item">
-        <div class="action-badge-red"></div>
-        <div class="badge-num" style="flex-shrink:0">3</div>
-        <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">了解中興議比價程序，確認請款週期與費用撥付路徑</div>
-          <div style="font-size:15px;color:var(--text-3);margin-top:3px">釐清內部流程以規劃合理執行時程</div>
-        </div>
-        <div class="action-owner">鳳捷</div>
-        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/07</div>
-      </div>
-      <div class="action-item">
-        <div class="action-badge-red"></div>
-        <div class="badge-num" style="flex-shrink:0">4</div>
-        <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">聯繫台大林之謙老師，約定效益驗證研究方法及交付內容</div>
-          <div style="font-size:15px;color:var(--text-3);margin-top:3px">第三方效益驗證是局長指定項目，越早確認方法論越好</div>
-        </div>
-        <div class="action-owner">鳳捷</div>
-        <div class="action-owner" style="background:rgba(232,92,51,.12);color:#ff7a5a;border-color:rgba(232,92,51,.3)">07/10</div>
-      </div>
-    </div>
-
-    <p style="font-size:15px;color:var(--text-3);margin-top:12px">📌 會議結束前逐項確認負責人與期限——不留「待確認」空格帶出會議室</p>
+  <div style="position:relative;z-index:1">
+    <p class="kicker">SECTION 04</p>
+    <h2 class="h2 gradient-text" style="font-size:82px;line-height:1.05;margin-bottom:0">後續待辦事項與方向討論</h2>
+    <div style="width:80px;height:4px;background:var(--accent);border-radius:2px;margin-top:20px"></div>
   </div>
-
+  <div class="section-num">04</div>
   <div class="deck-footer">
-    <span></span>
-    <span class="slide-number" data-current="8" data-total="12"></span>
+    <span>🟡 鳳捷・志剛主戰場 · 待決事項</span>
+    <span class="slide-number" data-current="11" data-total="16"></span>
   </div>
-  <div class="notes">這頁的目的是今天會議上確認每個人的負責項目和期限。強調最上方的「書面依據前置要件」——沒有鐵道局書面授權，CCO就無法辦理。</div>
 </section>
 
 <!-- P09 執行優先順序（二）🟡 -->
 <section class="slide" data-title="近期待辦" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">06 · 執行優先順序（二）</span>
+    <span class="eyebrow">04 · 後續待辦事項與方向討論</span>
     <span class="eyebrow" style="color:var(--warn)">🟡 7 月底前</span>
   </div>
 
   <div style="width:100%">
     <p class="kicker" style="color:var(--warn)">NEAR-TERM ACTION · DUE END OF JULY</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:4px">🟡 近期待辦——鳳捷、志剛的主戰場</h2>
-    <p class="dim" style="font-size:17px;margin-bottom:20px">⚠️ 這批任務直接卡儀器安裝時程，優先度應視同🔴處理，不能真的拖到月底</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:4px">🟡 近期待辦——鳳捷、志剛的主戰場</h2>
+    <p class="dim" style="font-size:30px;margin-bottom:20px">⚠️ 這批任務直接卡儀器安裝時程，優先度應視同🔴處理，不能真的拖到月底</p>
 
     <div class="grid g2" style="gap:14px">
       <div class="action-item" style="margin-bottom:0">
         <div class="action-badge-yellow"></div>
         <div class="action-code" style="color:var(--warn)">D1/D2</div>
         <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">五大模組安裝位置與設備數量清單</div>
-          <div style="font-size:14px;color:var(--text-3);margin-top:3px">與互助營造現場協調（借電、門禁、辦公空間）</div>
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">五大模組安裝位置與設備數量清單</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:3px">與互助營造現場協調（借電、門禁、辦公空間）</div>
         </div>
         <div class="action-owner">鳳捷</div>
       </div>
@@ -698,8 +724,8 @@ img,svg,video{max-width:100%;display:block}
         <div class="action-badge-yellow"></div>
         <div class="action-code" style="color:var(--warn)">I1/I2</div>
         <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">施工執行計畫書撰寫責任確認</div>
-          <div style="font-size:14px;color:var(--text-3);margin-top:3px">Shop Drawing 及驗收表單需求確認</div>
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">施工執行計畫書撰寫責任確認</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:3px">Shop Drawing 及驗收表單需求確認</div>
         </div>
         <div class="action-owner">鳳捷</div>
       </div>
@@ -707,8 +733,8 @@ img,svg,video{max-width:100%;display:block}
         <div class="action-badge-yellow"></div>
         <div class="action-code" style="color:var(--warn)">K1/K2</div>
         <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">廠商現場界面責任分工書面化</div>
-          <div style="font-size:14px;color:var(--text-3);margin-top:3px">安裝前現況會勘與簽證</div>
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">廠商現場界面責任分工書面化</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:3px">安裝前現況會勘與簽證</div>
         </div>
         <div class="action-owner">鳳捷/志剛</div>
       </div>
@@ -716,8 +742,8 @@ img,svg,video{max-width:100%;display:block}
         <div class="action-badge-yellow"></div>
         <div class="action-code" style="color:var(--warn)">E3</div>
         <div class="action-body">
-          <div style="font-size:17px;font-weight:600;color:var(--text-1)">台大第三方效益驗證合約確認</div>
-          <div style="font-size:14px;color:var(--text-3);margin-top:3px">陳俊杉／謝尚賢，C1-2 主責</div>
+          <div style="font-size:30px;font-weight:600;color:var(--text-1)">台大第三方效益驗證合約確認</div>
+          <div style="font-size:26px;color:var(--text-3);margin-top:3px">林之謙</div>
         </div>
         <div class="action-owner">鳳捷</div>
       </div>
@@ -726,15 +752,15 @@ img,svg,video{max-width:100%;display:block}
     <div class="alert-block mt-m" style="background:rgba(232,92,51,.12);border-color:rgba(232,92,51,.4)">
       <span class="alert-icon">🚨</span>
       <div>
-        <div style="font-size:17px;font-weight:700;color:#ff7a5a;margin-bottom:4px">A1-3：接入鐵道局危害登記簿</div>
-        <div style="font-size:15px;color:var(--text-2)">到期日：<strong style="color:#ff7a5a">2026-07-03</strong>（緊急！本週須完成）— 負責：鳳捷</div>
+        <div style="font-size:30px;font-weight:700;color:#ff7a5a;margin-bottom:6px">A1-3：接入鐵道局危害登記簿</div>
+        <div style="font-size:26px;color:var(--text-2)">到期日：<strong style="color:#ff7a5a">2026-07-03</strong>（緊急！本週須完成）— 負責：鳳捷</div>
       </div>
     </div>
   </div>
 
   <div class="deck-footer">
     <span>現場任務交接：今天起由鳳捷主導，志剛協助</span>
-    <span class="slide-number" data-current="9" data-total="12"></span>
+    <span class="slide-number" data-current="8" data-total="11"></span>
   </div>
   <div class="notes">特別強調A1-3是本週就到期的緊急項目。其他黃色任務雖然說「月底前」，但因為直接卡安裝進度，實際上越快處理越好。今天就要讓鳳捷和志剛知道這些是他們的主要任務。</div>
 </section>
@@ -742,67 +768,86 @@ img,svg,video{max-width:100%;display:block}
 <!-- P10 風險與待決 -->
 <section class="slide" data-title="風險與待決" style="background:var(--bg)">
   <div class="deck-header">
-    <span class="eyebrow">07 · 風險與待決事項</span>
+    <span class="eyebrow">04 · 後續待辦事項與方向討論</span>
     <span class="eyebrow">需現場指派負責人</span>
   </div>
 
   <div style="width:100%">
     <p class="kicker">OPEN ISSUES</p>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">這些議題還開著，Kickoff 現場可直接指派</h2>
-    <p class="dim" style="font-size:17px;margin-bottom:24px">不在今天逐條討論，僅確認負責人——完整清單見附錄</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">這些議題還開著，Kickoff 現場可直接指派</h2>
+    <p class="dim" style="font-size:30px;margin-bottom:24px">不在今天逐條討論，僅確認負責人——完整清單見附錄</p>
 
     <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
       <div class="risk-row" style="background:rgba(255,255,255,.04)">
-        <div class="risk-cell risk-category" style="font-size:13px;letter-spacing:.08em;color:var(--text-3)">議題類別</div>
-        <div class="risk-cell" style="font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--text-3)">待確認內容</div>
+        <div class="risk-cell risk-category" style="font-size:24px;letter-spacing:.08em;color:var(--text-3)">議題類別</div>
+        <div class="risk-cell" style="font-size:24px;font-weight:700;letter-spacing:.08em;color:var(--text-3)">待確認內容</div>
       </div>
       <div class="risk-row">
         <div class="risk-cell risk-category">契約架構</div>
-        <div class="risk-cell" style="font-size:16px;color:var(--text-2)">
+        <div class="risk-cell" style="font-size:28px;color:var(--text-2)">
           發包主辦單位界定；追加費用界面分工（工管部創新組 vs 桃地工程處）
           <span class="risk-pending">待確認</span>
         </div>
       </div>
       <div class="risk-row">
         <div class="risk-cell risk-category">系統整合</div>
-        <div class="risk-cell" style="font-size:16px;color:var(--text-2)">
+        <div class="risk-cell" style="font-size:28px;color:var(--text-2)">
           鐵道局既有平台清單與 API 介接方式；資料回傳格式與資安規定
           <span class="risk-pending">待確認</span>
         </div>
       </div>
       <div class="risk-row">
         <div class="risk-cell risk-category">廠商合約</div>
-        <div class="risk-cell" style="font-size:16px;color:var(--text-2)">
+        <div class="risk-cell" style="font-size:28px;color:var(--text-2)">
           優聖是否納入本次 PoC；台儀行是否加入本次 PoC
           <span class="risk-pending">待確認</span>
         </div>
       </div>
       <div class="risk-row">
         <div class="risk-cell risk-category">風評報告</div>
-        <div class="risk-cell" style="font-size:16px;color:var(--text-2)">
+        <div class="risk-cell" style="font-size:28px;color:var(--text-2)">
           進版時程是否來得及配合 PoC，或雙軌並行推進
           <span class="risk-pending">待確認</span>
         </div>
       </div>
       <div class="risk-row">
         <div class="risk-cell risk-category">年度發表</div>
-        <div class="risk-cell" style="font-size:16px;color:var(--text-2)">
+        <div class="risk-cell" style="font-size:28px;color:var(--text-2)">
           11 月鐵道局年度發表確切日期確認（影響倒推時程）
           <span class="risk-pending">本週待辦</span>
         </div>
       </div>
     </div>
 
-    <div style="margin-top:20px;padding:14px 20px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--radius);font-size:16px;color:var(--text-2)">
-      📁 完整議題清單：<span class="mono" style="font-size:14px;color:var(--text-3)">O:\創新組\2.智慧工地\2.5.2 鐵道局PoC-規劃資料\3.計畫啟動準備資料</span>
+    <div style="margin-top:20px;padding:14px 20px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--radius);font-size:28px;color:var(--text-2)">
+      📁 完整議題清單：<span class="mono" style="font-size:26px;color:var(--text-3)">O:\創新組\2.智慧工地\2.5.2 鐵道局PoC-規劃資料\3.計畫啟動準備資料\2026-07-02_plan_CJ12PoC鐵道局交付文件清單.pdf</span>
     </div>
   </div>
 
   <div class="deck-footer">
     <span></span>
-    <span class="slide-number" data-current="10" data-total="12"></span>
+    <span class="slide-number" data-current="9" data-total="11"></span>
   </div>
   <div class="notes">這頁不是要逐條解決，而是讓大家知道還有哪些議題懸著。重點是今天要指派負責人跟進。年度發表日期的確認最重要，影響所有倒推時程。</div>
+</section>
+
+<!-- 分隔頁 05 -->
+<section class="slide slide-section" data-title="05 · 結論">
+  <div class="cover-grid-line"></div>
+  <div class="deck-header">
+    <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
+    <span class="eyebrow">AGENDA 05 / 05</span>
+  </div>
+  <div style="position:relative;z-index:1">
+    <p class="kicker">SECTION 05</p>
+    <h2 class="h2 gradient-text" style="font-size:100px;line-height:1.05;margin-bottom:0">結論</h2>
+    <div style="width:80px;height:4px;background:var(--accent);border-radius:2px;margin-top:20px"></div>
+  </div>
+  <div class="section-num">05</div>
+  <div class="deck-footer">
+    <span>以終為始 · 三條行動線</span>
+    <span class="slide-number" data-current="15" data-total="16"></span>
+  </div>
 </section>
 
 <!-- P11 END 頁 -->
@@ -819,16 +864,16 @@ img,svg,video{max-width:100%;display:block}
   <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--accent) 30%,var(--accent-2) 70%,transparent)"></div>
 
   <div class="deck-header">
-    <span class="eyebrow">08 · 結論</span>
+    <span class="eyebrow">05 · 結論</span>
     <span class="eyebrow">CJ12 PoC Kickoff · 2026-07</span>
   </div>
 
   <!-- 核心大字 -->
   <div style="margin-bottom:48px">
-    <div style="font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:20px">THE NORTH STAR</div>
-    <div style="font-size:120px;font-weight:800;line-height:.95;letter-spacing:-.04em;background:linear-gradient(135deg,#c87c20,#e8a84c 40%,#f5d080 65%,#e8a84c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px">以終為始</div>
+    <div style="font-size:26px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:20px">THE NORTH STAR</div>
+    <div style="font-size:220px;font-weight:800;line-height:.95;letter-spacing:-.04em;background:linear-gradient(135deg,#c87c20,#e8a84c 40%,#f5d080 65%,#e8a84c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px">以終為始</div>
     <div style="width:80px;height:3px;background:var(--accent);border-radius:2px;margin:0 auto 20px"></div>
-    <p style="font-size:20px;color:var(--text-2);font-weight:300;max-width:700px;margin:0 auto;line-height:1.6">所有任務往「<strong style="color:var(--text-1);font-weight:700">年底具體成果</strong>」與「<strong style="color:var(--text-1);font-weight:700">規格規範文件</strong>」兩個終點對齊</p>
+    <p style="font-size:36px;color:var(--text-2);font-weight:300;max-width:900px;margin:0 auto;line-height:1.6">所有任務往「<strong style="color:var(--text-1);font-weight:700">年底具體成果</strong>」與「<strong style="color:var(--text-1);font-weight:700">規格規範文件</strong>」兩個終點對齊</p>
   </div>
 
   <!-- 兩條線 CTA -->
@@ -836,41 +881,33 @@ img,svg,video{max-width:100%;display:block}
     <div style="flex:1;padding:24px 28px;background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.22);border-radius:var(--radius);text-align:left">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
         <div style="width:4px;height:18px;background:#3b82f6;border-radius:2px"></div>
-        <span style="font-size:14px;font-weight:700;color:#60a5fa;letter-spacing:.08em">文件線 · 跑局裡</span>
+        <span style="font-size:26px;font-weight:700;color:#60a5fa;letter-spacing:.08em">文件線 · 跑局裡</span>
       </div>
-      <div style="font-size:17px;color:var(--text-2);line-height:1.6">▶ 瑞澤、呂經理 — 蘇花安×CJ12 規範盤點<br>▶ 規格／規範／招標文件 → 徐曉峯總工</div>
+      <div style="font-size:30px;color:var(--text-2);line-height:1.6">▶ 瑞澤、呂經理 — 蘇花安×CJ12 規範盤點<br>▶ 規格／規範／招標文件 → 徐曉峯總工</div>
     </div>
     <div style="flex:1;padding:24px 28px;background:rgba(232,168,76,.07);border:1px solid rgba(232,168,76,.22);border-radius:var(--radius);text-align:left">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
         <div style="width:4px;height:18px;background:var(--accent);border-radius:2px"></div>
-        <span style="font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.08em">現場線 · 跑工地</span>
+        <span style="font-size:26px;font-weight:700;color:var(--accent);letter-spacing:.08em">現場線 · 跑工地</span>
       </div>
-      <div style="font-size:17px;color:var(--text-2);line-height:1.6">▶ 鳳捷、志剛 — 一週內回報工地執行規劃<br>▶ 儀器安裝前置：借電、門禁、廠商界面</div>
+      <div style="font-size:30px;color:var(--text-2);line-height:1.6">▶ 鳳捷、志剛 — 一週內回報工地執行規劃<br>▶ 儀器安裝前置：借電、門禁、廠商界面</div>
     </div>
     <div style="flex:1;padding:24px 28px;background:rgba(232,92,51,.06);border:1px solid rgba(232,92,51,.20);border-radius:var(--radius);text-align:left">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
         <div style="width:4px;height:18px;background:var(--bad);border-radius:2px"></div>
-        <span style="font-size:14px;font-weight:700;color:#ff7a5a;letter-spacing:.08em">本週 Check-in</span>
+        <span style="font-size:26px;font-weight:700;color:#ff7a5a;letter-spacing:.08em">本週 Check-in</span>
       </div>
-      <div style="font-size:17px;color:var(--text-2);line-height:1.6">▶ 鐵道局書面授權取得（鳳捷）<br>▶ A1-3 危害登記簿 — <strong style="color:#ff7a5a">07/03 到期</strong></div>
+      <div style="font-size:30px;color:var(--text-2);line-height:1.6">▶ 鐵道局書面授權取得（鳳捷）<br>▶ A1-3 危害登記簿 — <strong style="color:#ff7a5a">07/03 到期</strong></div>
     </div>
   </div>
 
-  <!-- 完整議題清單路徑 -->
-  <div style="width:100%;max-width:1200px;padding:16px 24px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);display:flex;align-items:center;gap:16px;text-align:left">
-    <span style="font-size:20px;flex-shrink:0">📁</span>
-    <div>
-      <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);margin-bottom:4px">完整議題清單與待辦事項</div>
-      <div style="font-family:var(--font-mono);font-size:15px;color:var(--text-2)">O:\創新組\2.智慧工地\2.5.2 鐵道局PoC-規劃資料\3.計畫啟動準備資料</div>
-    </div>
-  </div>
 
   <!-- 底部橫線裝飾 -->
   <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--accent) 30%,var(--accent-2) 70%,transparent)"></div>
 
   <div class="deck-footer" style="position:absolute">
-    <span>帶著任務出去，一週後 Check-in</span>
-    <span class="slide-number" data-current="11" data-total="12"></span>
+    <span>一週後再次確認</span>
+    <span class="slide-number" data-current="10" data-total="11"></span>
   </div>
   <div class="notes">END頁。收尾回到「以終為始」的主軸。三欄行動：文件線（瑞澤/呂經理）、現場線（鳳捷/志剛）、本週緊急（書面授權+A1-3）。最下方顯示完整議題清單的共用資料夾路徑，方便會後查閱。</div>
 </section>
@@ -884,11 +921,11 @@ img,svg,video{max-width:100%;display:block}
 
   <div style="width:100%">
     <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:18px;padding:6px 16px 6px 6px;background:rgba(232,168,76,.12);border:1px solid rgba(232,168,76,.30);border-radius:999px">
-      <span style="background:var(--grad);border-radius:999px;padding:3px 12px;font-size:12px;font-weight:800;color:#1a0e00;letter-spacing:.12em">附錄</span>
-      <span style="font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase">APPENDIX · PARTNER STRATEGY</span>
+      <span style="background:var(--grad);border-radius:999px;padding:3px 12px;font-size:22px;font-weight:800;color:#1a0e00;letter-spacing:.12em">附錄</span>
+      <span style="font-size:22px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase">APPENDIX · PARTNER STRATEGY</span>
     </div>
-    <h2 class="h2" style="font-size:44px;margin-bottom:6px">資拓宏宇：合作，但先備妥文件與立場</h2>
-    <p class="dim" style="font-size:18px;margin-bottom:24px">局長指示「對話應即刻啟動」——但先把規格對齊文件備好，避免空手談判</p>
+    <h2 class="h2" style="font-size:80px;margin-bottom:6px">資拓宏宇：合作，但先備妥文件與立場</h2>
+    <p class="dim" style="font-size:32px;margin-bottom:24px">局長指示「對話應即刻啟動」——但先把規格對齊文件備好，避免空手談判</p>
 
     <div class="grid g3" style="gap:20px">
       <div class="partner-card">
@@ -913,7 +950,7 @@ img,svg,video{max-width:100%;display:block}
 
     <div class="alert-block mt-l" style="background:rgba(232,168,76,.08);border-color:rgba(232,168,76,.3)">
       <span class="alert-icon">⚖️</span>
-      <div style="font-size:17px;color:var(--text-2)">
+      <div style="font-size:30px;color:var(--text-2)">
         <strong style="color:var(--accent)">費用談判原則：</strong>必要時找嚴組長介入「做個局」；可提供表單 Source Code 作為誠意，但要求對方開發完成後回饋給我們——不能白給。
       </div>
     </div>
@@ -923,7 +960,7 @@ img,svg,video{max-width:100%;display:block}
 
   <div class="deck-footer">
     <span style="color:var(--text-3)">備用頁 · 視討論情況使用</span>
-    <span class="slide-number" data-current="12" data-total="12"></span>
+    <span class="slide-number" data-current="11" data-total="11"></span>
   </div>
   <div class="notes">備用頁，如果在結論後還有時間或有人問到資拓的問題才用這頁。核心立場：積極合作但不空手談，先備好規格對齊文件才去跟對方開口。</div>
 </section>
